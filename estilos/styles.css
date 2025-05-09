@@ -6,6 +6,7 @@
     --principal:#2499FF;
     --secundario:#85C7F2;
     --terceiro:#0A2450;
+    --borda:rgba(0, 0, 0, 0.048);
 
     --fonte-texto:'Lexend Deca';
     --fonte-titulo:'Montserrat';
@@ -16,6 +17,7 @@
     --principal:#2499FF;
     --secundario:##8abaff;
     --terceiro:#0A2450;
+    --borda:rgba(255, 255, 255, 0.073);
 }
 
 body{
@@ -23,12 +25,15 @@ body{
 }
 
 header{
+    z-index: 100;
+    top: 0;
+    position: sticky;
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
     font-family: var(--fonte-texto);
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+    border-bottom: 1px solid var(--borda);
 }
 .logo{
     display: flex;
@@ -56,6 +61,11 @@ header{
     text-decoration: none;
     font-weight: 600;
 }
+.nav-links li a:hover{
+    color: var(--principal);
+    transition: 0.3s;
+}
+
 #theme-switch{
     height: 50px;
     width: 50px;
@@ -94,4 +104,29 @@ header{
     color: var(--texto);
     text-decoration: none;
     font-weight: 500;
+}
+
+section {
+    position: relative;
+    min-height: 70vh; /* Altura mínima da viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    position: relative; /* Para ficar acima das bolhas */
+    z-index: 1;
+}
+.main-text h1{
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    color: var(--texto);
+}
+.main-text p{
+    color: var(--texto);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
 }
