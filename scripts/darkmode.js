@@ -14,10 +14,6 @@ const disableDarkmode = () => {
 if(darkmode === "active") enableDarkmode()
 
 themeSwitch.addEventListener("click", () =>{
-    if (darkmode !== "active") {
-       enableDarkmode()
-    } 
-    else {
-        disableDarkmode()
-    }
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })

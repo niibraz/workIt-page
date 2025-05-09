@@ -91,7 +91,7 @@ header{
     background-color: var(--principal);
 }
 .nav-btn button>a{
-    color: var(--base);
+    color: var(--texto);
     text-decoration: none;
     font-weight: 500;
 }
