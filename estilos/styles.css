@@ -3,7 +3,7 @@
 :root{
     --base:#EDF2F4;
     --texto:#1F1F1F;
-    --principal:#2499FF;
+    --principal:#0066FF;
     --secundario:#85C7F2;
     --terceiro:#0A2450;
     --borda:rgba(0, 0, 0, 0.048);
@@ -14,7 +14,7 @@
 .darkmode{
     --base:#1F1F1F;
     --texto:#EDF2F4;
-    --principal:#2499FF;
+    --principal:#0066FF;
     --secundario:##8abaff;
     --terceiro:#0A2450;
     --borda:rgba(255, 255, 255, 0.073);
@@ -30,7 +30,7 @@ header{
     position: sticky;
     display: flex;
     padding: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-family: var(--fonte-texto);
     align-items: center;
     border-bottom: 1px solid var(--borda);
@@ -43,10 +43,6 @@ header{
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--texto);
-}
-.logo>img{
-    height: 38px;
-    width: 45px;
 }
 .nav-links{
     display: flex;
@@ -101,7 +97,7 @@ header{
     background-color: var(--principal);
 }
 .nav-btn button>a{
-    color: var(--texto);
+    color: #EDF2F4;
     text-decoration: none;
     font-weight: 500;
 }
@@ -110,23 +106,26 @@ section {
     position: relative;
     min-height: 70vh; /* Altura mínima da viewport */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .main-text {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     padding: 20px;
-    position: relative; /* Para ficar acima das bolhas */
-    z-index: 1;
+    margin-left: 100px;
 }
 .main-text h1{
     font-family: var(--fonte-titulo);
     font-size: 48px;
     color: var(--texto);
 }
+#title{
+    color: var(--principal);
+}
 .main-text p{
     color: var(--texto);
     font-family: var(--fonte-texto);
     font-size: 16px;
+    padding-right: 120px;
 }
