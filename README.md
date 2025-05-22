@@ -1,2 +1,2 @@
 # workIt-page
-Landpage da WorkIt, empresa ficticia de tercerização de serviços
+Landpage da WorkIt, empresa criada a partir de um projeto da faculdade
