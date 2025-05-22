@@ -225,7 +225,7 @@ header{
 
 /* Be worker */
 .be-worker-container{
-    padding: 70px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,4 +280,52 @@ header{
     -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
+}
+
+/* Parte final */
+.meet-workit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.meet-text{
+    padding: 0 100px;
+}
+.meet-text h2{
+    font-family: var(--fonte-titulo);
+    color: var(--texto);
+    font-size: 3rem;
+
+}
+.meet-text ul{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.meet-text i{
+    color: #0052CC;
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.meet-text p{
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+    font-size: 18px;
+}
+.meet-img img{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+    border-top: 1px solid rgba(0, 0, 0, 0.076);
 }
